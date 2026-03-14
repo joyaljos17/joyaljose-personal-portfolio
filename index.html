@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyal Jose | Embedded Engineer</title>
+    <meta name="description" content="Portfolio of Joyal Jose, a passionate Embedded Engineer with expertise in C/C++ and electronics.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="container nav-container">
+            <a href="#" class="logo">Joyal<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav glass">
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content reveal-left">
+                <div class="badge glass">👋 Welcome to my portfolio</div>
+                <h1 class="title">Hi, I'm <span class="gradient-text">Joyal Jose</span></h1>
+                <h2 class="subtitle">Embedded <span>Engineer</span></h2>
+                <p class="description">
+                    A passionate tech enthusiast and developer with a deep love for electronics. 
+                    I specialize in C/C++ and building robust, efficient embedded systems that bridge software and hardware.
+                </p>
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-primary">Let's Connect <i class="fas fa-paper-plane"></i></a>
+                    <a href="#projects" class="btn btn-secondary glass">View My Work</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/joyaljos17" target="_blank" class="social-icon glass" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.google.com/search?q=Joyal+Jose" target="_blank" class="social-icon glass" aria-label="Google"><i class="fab fa-google"></i></a>
+                    <a href="#" target="_blank" class="social-icon glass" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" class="social-icon glass" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual reveal-right">
+                <div class="code-window glass">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <p class="window-title">main.c</p>
+                    </div>
+                    <div class="window-body">
+<pre><code><span class="keyword">#include</span> <span class="string">&lt;stdio.h&gt;</span>
+<span class="keyword">#include</span> <span class="string">"engineer.h"</span>
+
+<span class="type">int</span> <span class="function">main</span>() {
+    <span class="type">Engineer</span> joyal = <span class="function">init_engineer</span>();
+    
+    joyal.expertise = <span class="string">"C/C++"</span>;
+    joyal.domain = <span class="string">"Electronics"</span>;
+    joyal.passion = <span class="boolean">true</span>;
+    
+    <span class="keyword">while</span>(<span class="boolean">true</span>) {
+        <span class="function">build_embedded_systems</span>(&amp;joyal);
+        <span class="function">innovate</span>();
+    }
+    <span class="keyword">return</span> <span class="number">0</span>;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="section-subtitle">Discover</p>
+                <h2 class="section-title">About <span>Me</span></h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image-container reveal-left">
+                    <div class="about-image-wrapper glass">
+                        <!-- Placeholder for user's photo -->
+                        <div class="photo-placeholder">
+                            <i class="fas fa-microchip icon-large"></i>
+                        </div>
+                    </div>
+                    <div class="experience-badge glass">
+                        <span class="number">Tech</span>
+                        <span class="text">Enthusiast</span>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <h3>Transforming Ideas into <span class="gradient-text">Electronic Reality</span></h3>
+                    <p>I am Joyal Jose, an embedded systems engineer driven by a profound passion for technology and electronics. My journey in tech is fueled by curiosity and a desire to understand how things work at the lowest hardware levels.</p>
+                    <p>With strong foundations in C and C++, I design and develop efficient firmware that breathes life into electronic components. Whether it's microcontrollers, sensors, or complex IoT architectures, I thrive on the challenge of bridging the gap between hardware and software.</p>
+                    <ul class="about-info-list">
+                        <li><span class="label">Name:</span> <span>Joyal Jose</span></li>
+                        <li><span class="label">Role:</span> <span>Embedded Engineer</span></li>
+                        <li><span class="label">Core:</span> <span>C / C++ / Microcontrollers</span></li>
+                        <li><span class="label">Interest:</span> <span>Hardware, IoT, Electronics</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="section-subtitle">My Arsenal</p>
+                <h2 class="section-title">Skills & <span>Expertise</span></h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-category glass reveal-up" style="transition-delay: 0.1s">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C Programming</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C++ Programming</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-category glass reveal-up" style="transition-delay: 0.2s">
+                    <div class="category-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Embedded Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microcontrollers</span>
+                        <span class="skill-tag">RTOS</span>
+                        <span class="skill-tag">ARM Cortex-M</span>
+                        <span class="skill-tag">UART / SPI / I2C</span>
+                        <span class="skill-tag">Firmware Development</span>
+                        <span class="skill-tag">Device Drivers</span>
+                        <span class="skill-tag">Debugging</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-category glass reveal-up" style="transition-delay: 0.3s">
+                    <div class="category-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electronics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Circuit Design</span>
+                        <span class="skill-tag">PCB Layout</span>
+                        <span class="skill-tag">Sensors & Actuators</span>
+                        <span class="skill-tag">Oscilloscopes</span>
+                        <span class="skill-tag">Soldering</span>
+                        <span class="skill-tag">Hardware Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="section-subtitle">My Portfolio</p>
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass reveal-up" style="transition-delay: 0.1s">
+                    <div class="project-img">
+                        <i class="fas fa-address-book project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>C++</span>
+                            <span>Data Structures</span>
+                        </div>
+                        <h3>Address Book System</h3>
+                        <p>Developed a comprehensive address book application using C++ that handles storing, retrieving, editing, and managing contact information efficiently.</p>
+                        <a href="https://github.com/joyaljos17/addressbook" target="_blank" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass reveal-up" style="transition-delay: 0.2s">
+                    <div class="project-img">
+                        <i class="fas fa-temperature-low project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>C</span>
+                            <span>ESP32</span>
+                            <span>IoT</span>
+                        </div>
+                        <h3>Smart Environmental Monitor</h3>
+                        <p>Designed an IoT-based environmental monitoring system reading temperature, humidity, and air quality logic processing in C on an ESP32.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass reveal-up" style="transition-delay: 0.3s">
+                    <div class="project-img">
+                        <i class="fas fa-satellite-dish project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Embedded C</span>
+                            <span>STM32</span>
+                        </div>
+                        <h3>Custom RF Communication Protocol</h3>
+                        <p>Implemented a low-latency custom radio frequency protocol for STM32 microcontrollers to facilitate secure and fast peer-to-peer data transfer.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="section-subtitle">What I Do</p>
+                <h2 class="section-title">My <span>Services</span></h2>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass reveal-up" style="transition-delay: 0.1s">
+                    <div class="service-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Firmware Development</h3>
+                    <p>Writing highly optimized, robust, and reliable firmware in C and C++ for diverse microcontrollers and embedded processors.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card glass reveal-up" style="transition-delay: 0.2s">
+                    <div class="service-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>IoT Solutions</h3>
+                    <p>Building secure and scalable Internet of Things architectures connecting physical devices to the cloud efficiently.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass reveal-up" style="transition-delay: 0.3s">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Hardware Design</h3>
+                    <p>Prototyping electronics, circuit design, and PCB layouts tailored for specific product requirements and embedded logic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="section-subtitle">Get In Touch</p>
+                <h2 class="section-title">Contact <span>Me</span></h2>
+            </div>
+            
+            <div class="contact-content glass reveal-up">
+                <div class="contact-info">
+                    <h3>Let's build something <span class="gradient-text">together</span></h3>
+                    <p>If you have a project in mind, an embedded system problem to solve, or just want to chat about tech and electronics, I'd love to hear from you!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="icon-box glass">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="item-text">
+                                <h4>Email</h4>
+                                <a href="mailto:hello@joyaljose.com">contact@joyaljose.dev</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box glass">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="item-text">
+                                <h4>Location</h4>
+                                <span>Available Worldwide (Remote)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links mt-4">
+                        <a href="https://github.com/joyaljos17" target="_blank" class="social-icon glass" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.google.com/search?q=Joyal+Jose" target="_blank" class="social-icon glass" aria-label="Google"><i class="fab fa-google"></i></a>
+                        <a href="#" target="_blank" class="social-icon glass" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" class="social-icon glass" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required placeholder=" ">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <h2>Joyal<span>.</span></h2>
+                <p>Embedded Engineer & Tech Enthusiast</p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Joyal Jose. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
